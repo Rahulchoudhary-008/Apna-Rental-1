@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* background-color: #333; */
+    background-color:white;
+    /* color: white; */
+    color: black;
+    /* color: black; */
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    background-color: #ffffff;
+ 
+  
+}
+.reviews{
+    background-color: #f2eff1;
+    .review{
+        background-color: rgb(237, 207, 183);
+    }
+}
+
+
+h1, h2 {
+    margin-top: 10;
+
+}
+
+#review-form, #reviews {
+    background-color: rgb(205, 239, 155);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px orange; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    
+}
+
+input, select, textarea, button {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color:orange;
+    color: rgb(36, 6, 6);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cd8989;
+}
+
+.review-item {
+    border-bottom: 1px solid #000000;
+    padding: 10px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.container {
+    background-color: #f4c312;
+    padding: 30px;
+    border-radius: 70px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    width: 1460px;
+    height: 9vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #fffdfd;
+}
+
+.logo img {
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #666;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background-color: #d4ef0913;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.review:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.review .rating {
+    font-size: 18px;
+    color: #f39c12;
+}
+.footr {
+    background-color: #f285b8;
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 5vh;
+    box-sizing: border-box;
+
+    /* Center the box within its container */
+    margin: 0 auto;
+
+    /* Use Flexbox to center text inside the box */
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}

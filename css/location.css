@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "baloo bhai", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 11px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  /* transition: 0.6s;
+  z-index: 10000; */
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* flex-direction: column; */
+}
+
+.left img {
+  width: 65px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.left span {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* .mid {
+     display: block;
+    width: 36%;
+    margin: 20px auto; */
+/* border: 2px solid black; 
+} */
+
+.right {
+  display: inline-block;
+  /* border: 2px solid yellow; */
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+  padding: 34px 23px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  /* text-decoration: underline; */
+  color: orange;
+}
+
+.btn {
+  font-family: "baloo bhai", cursive;
+  margin: 0px 0px;
+  padding: 16px 36px;
+  cursor: pointer;
+  border-radius: 5rem;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* .btn:hover{
+    background-color: rgb(228, 221, 221);
+} */
+.btn:hover,
+.btn.active {
+  /* text-decoration: underline; */
+  color: orange;
+  background: white;
+  border: 1px orange solid;
+}
+
+.view-all-btn {
+  padding: 16px 36px;
+  cursor: pointer;
+  border-radius: 5rem;
+  background: white;
+  border: none;
+  color: black;
+  -webkit-text-fill-color: black;
+  border: solid 1px black;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.view-all-btn:hover,
+.view-all-btn.active {
+  /* text-decoration: underline; */
+  -webkit-text-fill-color: white;
+  background: orange;
+  border: 1px orange solid;
+}
+.pickup-main-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding: 10px;
+}
+.pickup-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* gap: 2rem; */
+
+  /* border: 1px solid; */
+  span {
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 600;
+}
+}
+.pickupLocation {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  /* border: 2px solid black; */
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    border: 0.3px solid rgba(0, 0, 0, 0.463);
+    padding: 7px;
+    border-radius: 10px;
+
+    input {
+      border: none;
+    }
+    input:focus {
+      outline: none;
+    }
+    i {
+      color: rgba(0, 0, 0, 0.463);
+    }
+  }
+}
+.pickupDate, .Return {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  /* border: 2px solid black; */
+
+  input {
+    border: 0.5px solid rgba(0, 0, 0, 0.463);
+    padding: 7px;
+    border-radius: 10px;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+.Return {
+  width: 150px;
+}
+.photo{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+  width: 30%;
+  background: white;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.pic{
+    /* position: relative; */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 0 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+.name{
+    font-weight: 600;
+    color: #201F1D;
+    padding: 10px;
+}
+.review{
+    color: #FF9307;
+    font-size: 14px;
+}
+.engine{
+    margin: 15px 0;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      gap: 1rem;
+
+      li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+  width: 30%;
+        gap: 0.1rem;
+        /* padding: 4px 10px; */
+      }
+    }
+}
+ /*.engine ul{
+    margin: 0 0 10px;
+}
+.engine ul li{
+    flex: 33.33%;
+    max-width: 33.33%;
+} */
+.engine ul li span{
+    line-height: 0;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+}
+.engine ul li p{
+    color: #787878;
+    margin: 0 0 0 8px;
+}
+.locationofcar{
+    background: #F2F7F6;
+    padding: 8px;
+    /* margin: 0 0 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.locationofcarlocation{
+    margin-right: 7px;
+    line-height: 0;
+}
+.locationofcarlocation span{
+    font-family: 'feather' !important;
+    /* speak: none; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.locationofcarlocation span{
+    margin-right: 7px;
+    line-height: 0;
+}
+.price{
+    font-weight: 700;
+    font-size: 24px;
+    color: #FF0000;
+    display: flex;
+    align-items: center;
+}
+.price span{
+    color: rgb(130, 130, 130);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+.Rent{
+    background: #201F1D;
+    /* position: relative; */
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    /* border: ; */
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+.main-div-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 10px;
+
+  /* background: red; */
+}

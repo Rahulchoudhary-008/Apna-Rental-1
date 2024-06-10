@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #e7853a;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin-left: 2rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f6f2f2;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p{
+    font-weight: bold;
+    color: #06054d;
+}
+address{
+    font-weight: bold;
+}
+.story p
+{
+    font-weight: bold;
+    color: #7f0538;
+}
+.values ul,
+.team .team-members,
+.contact p {
+    margin: 1rem 0;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    background: #c17e09;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+.team .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+}
+
+.team .member {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: #d4c2c2;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.team .member img {
+    max-width: 50%;
+    border-radius: 0%;
+}
+
+.team .member-info {
+    background: #080808;
+    color: #fffbfb;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.team .member-info h3 {
+    margin: 0;
+    color: #d9ed01;
+    font-size: 1.2rem;
+}
+
+.team .member-info p {
+    margin: 0;
+    color: #f5f1f1;
+    font-size: 1rem;
+    
+    font-weight: bold;
+
+}
+
+footer {
+    background: #df7676;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header li {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .team .team-members {
+        flex-direction: column;
+    }
+
+    .team .member {
+        flex: 1 1 100%;
+    }
+}
